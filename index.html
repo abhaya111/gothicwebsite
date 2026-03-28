@@ -128,23 +128,6 @@ body {background-color:#63666A}
 
 <style>
 
-body, p, h1, h2, h3, h4, h5 {
-    max-width: calc(100% - 320px); 
-    margin-left: 20px;           
-    margin-right: 20px;          
-    box-sizing: border-box;       
-    word-wrap: break-word;        
-}
-
-@media (max-width: 600px) {
-    body, p, h1, h2, h3, h4, h5 {
-        max-width: 100%;          
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-    
-	
 html, body {
   overflow-x: hidden;   
 }
@@ -207,16 +190,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 2px;
 }
 
-.side-gallery-left h5 {
-    font-size: 18px;       
-    line-height: 1.3em;
-    text-align: center;
-    margin: 0 0 15px 0;
-    letter-spacing: 1px;   
-    white-space: normal;   
-    word-wrap: break-word;
-}
-	
 table {
   margin: 0 auto;        
   border-collapse: collapse; 
@@ -365,52 +338,35 @@ h1, h2, h3, h4, h5 {
 }
 
 
-
-.side-gallery-left h5 {
-    white-space: normal;    
-    font-size: 18px;         
-    margin: 0 5px 15px 5px;  
-    line-height: 1.2em;      
-    text-align: center;     
-    word-wrap: break-word;   
-}
-	
 .gallery-tab-left {
-    position: fixed;
-    left: 0;
-    top: 0;
-
-    background: #c30002;
-    color: white;
-
-    font-size: 18px;     
-    padding: 8px 10px;    
-    min-width: 50px;     
-    min-height: 40px;
-
-    cursor: pointer;
-    font-family: 'Creepster', cursive;
-    text-align: center;
-    border-radius: 0 0 10px 0;
-    z-index: 1000;
-    box-shadow: 0 0 10px black;
-
-    white-space: nowrap;   
-    overflow: hidden;     
-    text-overflow: ellipsis; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #c30002;
+  color: white;
+  font-size: 18px;       
+  padding: 10px 12px;   
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  border-radius: 0 0 10px 0;
+  z-index: 1000;
+  box-shadow: 0 0 10px black;
 }
 
 @media (max-width: 600px) {
-    .gallery-tab-left {
-        font-size: 20px;   
-        padding: 10px 12px;
-        min-width: 60px;
-        min-height: 50px;
-    }
+  .side-gallery-left {
+    padding-top: 60px;  
+  }
+
+  .gallery-tab-left {
+    font-size: 22px;      
+    padding: 12px 14px;
+  }
 }
-
-
-
+	
 	
 .side-gallery-left {
   position: fixed;
@@ -597,7 +553,6 @@ function toggleGallery() {
 </script>
 
 </html>
-
 
 
 
