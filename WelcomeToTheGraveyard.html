@@ -65,6 +65,23 @@ body {background-color:#63666A}
 
 <style>
 
+body, p, h1, h2, h3, h4, h5 {
+    max-width: calc(100% - 320px); 
+    margin-left: 20px;           
+    margin-right: 20px;          
+    box-sizing: border-box;       
+    word-wrap: break-word;        
+}
+
+@media (max-width: 600px) {
+    body, p, h1, h2, h3, h4, h5 {
+        max-width: 100%;          
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+    
+    
 html, body {
   overflow-x: hidden;  
 }
