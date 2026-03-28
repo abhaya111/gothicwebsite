@@ -263,7 +263,10 @@ h1, h2, h3, h4, h5 {
   top: 0;
   background: #c30002;
   color: white;
-  padding: 15px;
+  font-size: 18px;       
+  padding: 10px 12px;   
+  min-width: 40px;
+  min-height: 40px;
   cursor: pointer;
   font-family: 'Creepster', cursive;
   text-align: center;
@@ -272,6 +275,17 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 0 10px black;
 }
 
+@media (max-width: 600px) {
+  .side-gallery-left {
+    padding-top: 60px;  
+  }
+
+  .gallery-tab-left {
+    font-size: 22px;      
+    padding: 12px 14px;
+  }
+}
+    
 .side-gallery-left {
   position: fixed;
   top: 0;
