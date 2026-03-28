@@ -356,27 +356,38 @@ h1, h2, h3, h4, h5 {
 
 
 .gallery-tab-left {
-  position: fixed;
-  left: 0;
-  top: 0;
-  background: #c30002;
-  color: white;
-  font-size: 18px;       
-  padding: 10px 12px;   
-  min-width: 40px;
-  min-height: 40px;
-  cursor: pointer;
-  font-family: 'Creepster', cursive;
-  text-align: center;
-  border-radius: 0 0 10px 0;
-  z-index: 1000;
-  box-shadow: 0 0 10px black;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #c30002;
+    color: white;
+
+    font-size: 18px;     
+    padding: 8px 10px;    
+    min-width: 50px;     
+    min-height: 40px;
+
+    cursor: pointer;
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    border-radius: 0 0 10px 0;
+    z-index: 1000;
+    box-shadow: 0 0 10px black;
+
+    white-space: nowrap;   
+    overflow: hidden;     
+    text-overflow: ellipsis; 
 }
 
 @media (max-width: 600px) {
-  .side-gallery-left {
-    padding-top: 60px;  
-  }
+    .gallery-tab-left {
+        font-size: 20px;   
+        padding: 10px 12px;
+        min-width: 60px;
+        min-height: 50px;
+    }
+}
 
   .gallery-tab-left {
     font-size: 22px;      
