@@ -1,6 +1,7 @@
 <!doctype html>
 <html>  
 <head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style> 
 body {background-color:#63666A} 
 </style> 
@@ -260,9 +261,15 @@ h1, h2, h3, h4, h5 {
   position: fixed;
   left: 0;
   top: 0;
+
   background: #c30002;
   color: white;
-  padding: 15px;
+
+  font-size: 18px;        
+  padding: 10px 12px;
+  min-width: 40px;
+  min-height: 40px;
+
   cursor: pointer;
   font-family: 'Creepster', cursive;
   text-align: center;
@@ -271,6 +278,21 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 0 10px black;
 }
 
+@media (max-width: 600px) {
+  .gallery-tab-left {
+    font-size: 30px;
+    padding: 20px;
+    min-width: 60px;
+    min-height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  h5 {
+    margin-top: 80px;
+  }
+}
+    
 .side-gallery-left {
   position: fixed;
   top: 0;
